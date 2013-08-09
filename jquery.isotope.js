@@ -454,6 +454,11 @@
     _init : function( callback ) {
 
       this.$filteredAtoms = this._filter( this.$allAtoms );
+      // infowrap custom
+      // prevent: cannot read property 'original-order' of undefined
+      // this is actively being fixed and tracked (keep checking): https://github.com/desandro/isotope/issues/386
+      //this._sort();
+      // end infowrap custom
       this._sort();
       this.reLayout( callback );
 
