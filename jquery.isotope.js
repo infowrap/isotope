@@ -459,7 +459,6 @@
       // this is actively being fixed and tracked (keep checking): https://github.com/desandro/isotope/issues/386
       //this._sort();
       // end infowrap custom
-      this._sort();
       this.reLayout( callback );
 
     },
